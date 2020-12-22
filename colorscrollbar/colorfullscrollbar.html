@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Creative Page Scroll Progress Bar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Creative Scroll Progress Bar</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed id semper risus in. Nunc mi ipsum faucibus vitae. Volutpat diam ut venenatis tellus in metus vulputate eu. Scelerisque purus semper eget duis at tellus at. Fermentum et sollicitudin ac orci phasellus egestas tellus. Et egestas quis ipsum suspendisse ultrices gravida. Pellentesque habitant morbi tristique senectus. Sem integer vitae justo eget magna fermentum. Interdum posuere lorem ipsum dolor sit. Sit amet facilisis magna etiam tempor orci eu lobortis. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Ut eu sem integer vitae justo. At volutpat diam ut venenatis tellus in. Vestibulum morbi blandit cursus risus at ultrices.
+
+            Nulla pellentesque dignissim enim sit amet. Habitant morbi tristique senectus et netus. Adipiscing enim eu turpis egestas pretium aenean. Sed tempus urna et pharetra pharetra massa massa. Enim eu turpis egestas pretium aenean pharetra. Proin nibh nisl condimentum id venenatis a. Suscipit adipiscing bibendum est ultricies integer quis auctor. Consequat ac felis donec et odio pellentesque. Porta lorem mollis aliquam ut porttitor leo a diam. Tincidunt vitae semper quis lectus. Ultrices in iaculis nunc sed augue lacus. Massa sapien faucibus et molestie ac feugiat sed lectus. Eu turpis egestas pretium aenean pharetra. Risus quis varius quam quisque. Elit at imperdiet dui accumsan sit amet. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Enim nunc faucibus a pellentesque sit amet porttitor eget.
+
+            Tincidunt id aliquet risus feugiat in ante metus dictum at. Sagittis id consectetur purus ut faucibus pulvinar elementum. Quam vulputate dignissim suspendisse in est ante. Turpis in eu mi bibendum. Amet nisl purus in mollis nunc sed. Libero volutpat sed cras ornare. Velit egestas dui id ornare arcu. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices vitae auctor eu augue. Proin sed libero enim sed faucibus turpis in eu mi. Donec adipiscing tristique risus nec. Sagittis orci a scelerisque purus semper eget duis. Tristique nulla aliquet enim tortor at auctor urna nunc. Eu turpis egestas pretium aenean pharetra magna ac placerat. Elit at imperdiet dui accumsan sit amet nulla facilisi. Ac orci phasellus egestas tellus rutrum. Aliquam nulla facilisi cras fermentum. Adipiscing enim eu turpis egestas pretium aenean pharetra magna.
+
+            Mollis nunc sed id semper risus in hendrerit. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Pellentesque elit ullamcorper dignissim cras tincidunt. Facilisi nullam vehicula ipsum a arcu cursus. Imperdiet proin fermentum leo vel orci. Felis bibendum ut tristique et egestas. Viverra mauris in aliquam sem. Quis enim lobortis scelerisque fermentum. Ultrices eros in cursus turpis massa. Aliquam sem et tortor consequat id. Nunc eget lorem dolor sed viverra ipsum nunc. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Senectus et netus et malesuada fames ac.
+
+            Tristique magna sit amet purus gravida quis blandit. Et magnis dis parturient montes nascetur ridiculus mus. Lorem ipsum dolor sit amet consectetur adipiscing. Sit amet dictum sit amet justo. Congue mauris rhoncus aenean vel elit scelerisque mauris. Tempus quam pellentesque nec nam. Adipiscing elit ut aliquam purus sit amet luctus. Porttitor leo a diam sollicitudin tempor. Nunc mattis enim ut tellus elementum sagittis vitae et. Gravida rutrum quisque non tellus. Vestibulum lectus mauris ultrices eros in cursus turpis. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Placerat orci nulla pellentesque dignissim enim. Massa eget egestas purus viverra accumsan in. Consectetur lorem donec massa sapien faucibus et molestie ac.
+        </p>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>
